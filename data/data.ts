@@ -1,0 +1,38 @@
+export const restaurants: Restaurant[] = [
+  {
+    nom: "Au fil de l'eau",
+    photoUri: "https://admin.helloresto.fr/upload/newsHelloresto/7593/f246c2af72550f5f9f9d64d6ed14d00f4244603b.png",
+    url: "https://www.helloresto.fr/magazine-helloresto/restaurant-au-fil-de-l-eau---roanne-7593.html",
+    localisation: "Roanne",
+    shortDescription: "Au bord du canal Roanne Digoin, découvrez le restaurant Au fil de l'eau qui propose une carte pour les amoureux de la viande et des grenouilles ",
+    description: "",
+    date: 1,
+  },
+  {
+    nom: "L'Original",
+    photoUri: "https://admin.helloresto.fr/upload/newsHelloresto/7587/e5143aa26e948fcdb0827c4232b1c68629d3b9b6.png",
+    url: "https://www.helloresto.fr/magazine-helloresto/restaurant-l-original-7587.html",
+    localisation: "saint Haon le Vieux",
+    description: "",
+    shortDescription: "Tout proche de Renaison sur la côte Roannaise, à saint Haon le Vieux, venez à la découverte d'un nouveau concept restaurant bar cocktail.",
+    date: 2,
+  },
+  {
+    nom: "Le Clos d'Urfé",
+    photoUri: "https://admin.helloresto.fr/upload/newsHelloresto/7592/c775c868c84563705ee16be528f33fa0434a594e.png",
+    url: "https://www.helloresto.fr/magazine-helloresto/restaurant-le-clos-d-urfe-7592.html",
+    localisation: "Saint Sixte",
+    description: "",
+    shortDescription: "Dans la région Auvergne Rhône Alpes, en plein coeur du Forez, dans le pays d'Urfé, partez à la découverte d'un restaurant brasserie et Chambre d'hôte Le Clos D'Urfé.",
+    date: 3,
+  },
+  {
+    nom: "L'Auberge des Hauts du Roy",
+    photoUri: "https://admin.helloresto.fr/upload/newsHelloresto/7546/7703767c5e833bcda1829a33d98e953f1b16d73b.jpeg",
+    url: "https://www.helloresto.fr/magazine-helloresto/l-auberge-des-hauts-du-roy-7546.html",
+    localisation: "Villerest ",
+    description: "",
+    shortDescription: "Jean-Christophe Martin, le cuisinier et son épouse Fabienne vous accueillent et partagent leur savoir-faire et bonne humeur dans leur restaurant.",
+    date: 4,
+  },
+]

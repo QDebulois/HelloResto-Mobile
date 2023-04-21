@@ -21,20 +21,23 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        // tabBarStyle: { backgroundColor: "#B0233A" },
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          headerTintColor: colorScheme === "light" ? "#B0233A" : "#E37285",
+          tabBarActiveTintColor: colorScheme === "light" ? "#B0233A" : "#E37285",
+          title: 'Accueil',
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
-            <Link href="/modal" asChild>
+            <Link href="modals/infos" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
-                    name="info-circle"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
+                    name="question-circle"
+                    size={28}
+                    color={colorScheme === "light" ? "#B0233A" : "#E37285"}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
@@ -44,10 +47,21 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="rechercher"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          headerTintColor: colorScheme === "light" ? "#B0233A" : "#E37285",
+          tabBarActiveTintColor: colorScheme === "light" ? "#B0233A" : "#E37285",
+          title: 'Rechercher',
+          tabBarIcon: ({ color }) => <TabBarIcon name="search" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="login"
+        options={{
+          headerTintColor: colorScheme === "light" ? "#B0233A" : "#E37285",
+          tabBarActiveTintColor: colorScheme === "light" ? "#B0233A" : "#E37285",
+          title: 'Mon Compte',
+          tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
         }}
       />
     </Tabs>
